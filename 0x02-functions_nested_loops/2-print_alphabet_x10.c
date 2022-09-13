@@ -1,12 +1,10 @@
-/*This main.h contains the print_alphabet function prototype*/
-
+/* main.h includes function prototype*/
 #include "main.h"
 
 /**
- * print_alphabet - Entry Function to the body of this code
- * Return: If successful returns (0) otherwise returns (1)
+ * print_alphabet_x10 - prints alphabet 10 times
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int i;
 

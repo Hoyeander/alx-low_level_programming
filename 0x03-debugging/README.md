@@ -1,1 +1,1 @@
-This is a readme file for 0x03. C - Debugging
+This is a readme file for 0x03-debugging

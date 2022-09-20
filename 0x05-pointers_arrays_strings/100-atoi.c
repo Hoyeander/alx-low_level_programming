@@ -1,34 +1,27 @@
 #include "main.h"
 
 /**
- * print_triangle - check for a digit
- * @size : integer type
- * Return:void
+ * _atoi - convert a string to an integer
+ * @s: pointer to the string
+ *
+ * Return: value of the converted string
  */
-
-void print_triangle(int size)
+int _atoi(char *s)
 {
+	int a = 1;
+	unsigned int n = 0;
 
-	int i = 1, ii;
+	do {
+		if (*s == '-')
+			a *= -1;
 
-	while (i <= size && size > 0)
-	{
-		ii = 0;
-		while (ii < size - 1)
-		{
-			-putchar(" ");
-			ii++;
-		}
-		ii = 0;
-		while (ii < 1)
-		{
-			_putchar("#");
-			ii++;
-		}
+		else if (*s >= '0' && *s <= '9')
+			n = (n * 10) + (*s - '0');
 
-		_putchar("\n");
-		i++;
-	}
-	if (i == 1)
-		_putchar("\n");
+		else if (n > 0)
+			break;
+
+	} while (*s++);
+
+	return (n * a);
 }

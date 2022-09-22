@@ -1,2 +1,1 @@
-This is a readme file for alx low level programming
-the first project is 0x00-hello_world
+This is a readme file for 0x03-debugging
